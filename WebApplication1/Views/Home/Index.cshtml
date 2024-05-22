@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+
+        <style>
+            .lead {
+                font-family: 'Arial', sans-serif;
+                line-height: 1.6;
+                color: #333;
+            }
+
+                .lead h2 {
+                    color: #333; /* Title color */
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+
+                .lead p, .lead li {
+                    margin-bottom: 10px;
+                }
+
+                .lead .highlight {
+                    font-weight: bold;
+                    color: #555; /* Highlight color */
+                }
+
+                .lead .creator-list {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                    .lead .creator-list li {
+                        display: block;
+                        margin-bottom: 5px;
+                    }
+
+                .lead .department {
+                    font-style: italic;
+                    color: #444; /* Department color */
+                }
+
+                .lead .project-description {
+                    font-size: 18px;
+                    text-align: justify;
+                }
+        </style>
+
+        <div class="lead">
+            <h2>Project Title:</h2>
+            <p><span class="highlight">Visualization of the shortest travel time and energy consumption routes on a road network</span></p>
+
+            <p><span class="highlight">Mentor:</span> prof. Tonči Carić, PhD</p>
+            <p><span class="highlight">Supervisor:</span> Tomislav Erdelić, PhD</p>
+
+            <p class="highlight">Creators:</p>
+            <ul class="creator-list">
+                <li>Ante Dumančić</li>
+                <li>Dominik Knez</li>
+                <li>Marko Kukor</li>
+            </ul>
+
+            <p class="department"><span class="highlight">Department:</span> Department of Intelligent Transportation System</p>
+
+            <p><span class="highlight">Call:</span> Internal competition of the Faculty of Transport and Traffic Sciences for the implementation of research projects by undergraduate and graduate students.</p>
+
+            <p><span class="highlight">Funding:</span> Faculty of Transport and Traffic Sciences</p>
+            <p><span class="highlight">Budget:</span> 1650 EUR</p>
+
+            <p><span class="highlight">Project description:</span> </p>
+
+            <p class="project-description">
+                The project aims to develop a web application that analyzes routes based on travel time or energy consumption criteria. Utilizing a modeled representation of the actual road network, the application generates a graph derived from a digital traffic map obtained through the SORDITO project.
+                Within this graph, speed profiles developed as part of the SORDITO project are employed to compute travel time. For determining energy consumption, these speed profiles are integrated with the Copernicus digital elevation model and Nissan Leaf vehicle characteristics within the vehicle longitudinal dynamic model.
+                The application incorporates the implementation of Dijkstra's and Bellman-Ford's algorithms, crucial for identifying the shortest routes in terms of travel time and energy consumption on the road network. To enhance algorithm execution, a Fibonacci heap data structure is applied.
+                Spatial concave and convex functions were employed to delineate the geographical region accessible within a specified travel time or energy threshold.
+                Featuring an interactive graphical interface, the application facilitates spatial visualization using contours. Users can dynamically alter the initial point, contour type, as well as time and energy parameters through the graphical web interface. Presently, the geographical scope is confined to the City of Zagreb.
+
+            </p>
+        </div>
+
+        <p class="lead">
+            Example below shows the concave countour (red) that a person can achieve by car within 5 minutes starting from the position with coordinates: 45.808820054643576, 15.974979400634764.
+        </p>
+        <img src="~/Content/Images/SP_example.png"
+             alt="This is a picture of example"
+             height="600">
+
+        <br />
+        <br>
+        <br />
+        <br>
+        <br />
+        <br>
+    </section>
+
+</main>

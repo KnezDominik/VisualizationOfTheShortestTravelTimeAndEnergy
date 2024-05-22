@@ -1,0 +1,126 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.custom-navbar-item {
+    margin: 0; /* Adjust as needed */
+    padding: 0; /* Adjust as needed */
+}
+
+
+
+* {
+    font-family: 'Century Gothic', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/*Div container za kartu*/
+#divMap {
+    border: 2px solid #cccccc;
+    position: absolute;
+    left: 0px;
+    right: 0%;
+    top: 0px;
+    bottom: 0%;
+    height: 100%;
+    background: #cccccc;
+    z-index: 1
+}
+
+body {
+    overflow: hidden; /* Disable scrolling for the entire body */
+}
+
+/*Div container za opcije u sidebaru*/
+/*#divOptions {*/
+    /*border: 2px solid #cccccc;*/
+    /*background-color: black;
+    position: absolute;
+    left: 0px;
+    right: 100% - 150px;
+    top: 107px;
+    bottom: 0%;
+    background: black;
+    z-index: 2;
+    
+}*/
+
+
+
+
+
+
+/*Ostale postavke su defaultne iz templatea*/
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background: black;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+label.labelLeft {
+    display: inline-block;
+    text-align: left;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+/*Knez*/
+.slider-value {
+    font-family: 'Century Gothic', sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px; /* Adjust the distance from the slider handle */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+.sidebar {
+    position: absolute;
+    width: 45px;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+    transition: 0.5s;
+    left: 0px;
+    top:100px;
+    z-index: 100000 !important;
+}
+    
+
+    .sidebar .main-button {
+        width: 100%;
+    }
+    .sidebar.open {
+        left: 0;
+        width:240px;
+    }
+
+
+
+
+
+ 
